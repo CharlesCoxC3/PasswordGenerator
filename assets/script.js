@@ -59,7 +59,7 @@ function generatePassword(){
       generatedPassword += result
     };
 
-    if(confirm1, confirm2, confirm3, confirm4 !== true){
+    if(passwordOptions < 1){
       return "No selections were made"
     };
 
