@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  console.log("you clicked the button");
+//    console.log("you clicked the button");
   
   var userChoice = window.prompt("What legnth do you want you password to be? ( 8-128 characters)")
 
@@ -49,13 +49,15 @@ function generatePassword(){
         var passwordOptions = passwordOptions.concat(symbolsList)
       }
 
-      console.log(passwordOptions)
+//  console.log(passwordOptions)
 
   var generatedPassword = ""
   
     for (var i = 0; i < passwordLength; i++){
       var result = passwordOptions[Math.floor(Math.random()*passwordOptions.length)];
-      console.log(result)
+    
+//  console.log(result)
+    
       generatedPassword += result
     };
 
@@ -63,12 +65,9 @@ function generatePassword(){
       return "No selections were made"
     };
 
-return generatedPassword
+return generatedPassword;
+
 }; 
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
