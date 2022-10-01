@@ -8,6 +8,7 @@ function generatePassword(){
 
   var passwordLength = parseInt(userChoice)
 
+
   if (!userChoice) {
     return;
   }
@@ -15,13 +16,16 @@ function generatePassword(){
   if (isNaN(passwordLength)){
     window.alert("That is not an accepted value..")
   } 
-  else if (passwordLength < 8, passwordLength > 128){
+  else if (passwordLength < 8 || passwordLength > 128){
     window.alert("That is not an accepeted value..")
   }
-  else{
-    window.alert("This value was accepted")
+  else {
+    window.alert("The number " + passwordLength + " was accepted")
   }
-  return;
+  
+  window.confirm("The password must contain lowercase letters, do you wish to continue?")
+  window.confirm("The password must contain uppercase letters, do you wish to continue?")
+  window.confirm("The password must contain numeric/special characters, do you wish to continue?")
 }
 
 // Write password to the #password input
