@@ -22,10 +22,21 @@ function generatePassword(){
   else {
     window.alert("The number " + passwordLength + " was accepted")
   }
-  
-  window.confirm("The password must contain lowercase letters, do you wish to continue?")
-  window.confirm("The password must contain uppercase letters, do you wish to continue?")
-  window.confirm("The password must contain numeric/special characters, do you wish to continue?")
+
+  var lowerCase = window.confirm("The password must contain lowercase letters, do you wish to continue?")
+    if (lowerCase){ var upperCase = window.confirm("The password must contain uppercase letters, do you wish to continue?")
+      if (upperCase){var specialChar = window.confirm("The password must contain numeric/special characters, do you wish to continue?")}
+    }
+  else {
+    return;
+  };
+
+  var passwordCriteria = {
+    lowerCaseList: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+    numberList: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    symbolsList: ["!", "@", "#", "$", "%", "^", "&", "*"],
+  };
+
 }
 
 // Write password to the #password input
