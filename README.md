@@ -15,3 +15,7 @@ N/A
 
 License
 Please refer to the LICENSE in the repo
+
+![Challenge Week 3 screenshot](https://user-images.githubusercontent.com/112132288/193682902-349a9e8c-8092-4deb-8b20-2db55e8308c2.png)
+
+https://charlescoxc3.github.io/PasswordGenerator/
